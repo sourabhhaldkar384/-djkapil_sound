@@ -94,5 +94,25 @@
 </div>
 
 <script src="script.js"></script>
+<!-- Popup Viewer -->
+<div id="popup" class="popup">
+  <span onclick="closePopup()">×</span>
+  <img id="popup-img" />
+</div>
+
+<script src="script.js"></script>
+
+<!-- 👇 ADD THIS BELOW -->
+<script>
+  window.addEventListener("load", function () {
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      el.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
