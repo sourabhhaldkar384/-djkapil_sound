@@ -47,7 +47,7 @@ header p {
   margin: 50px auto;
   text-align: center;
   font-size: 28px;
-  color: red;
+  color: rgb(109, 20, 243);
   font-family: 'Orbitron', sans-serif;
   height: 60px;
   position: relative;
@@ -158,7 +158,46 @@ header p {
   transform: translateY(0px);
 }
 
-@media (max-width: 600px) {
-  header h1 { font-size: 2rem; }
-  .gallery-section h2 { font-size: 1.5rem; }
+/* ✅ Desktop Responsive Fixes */
+@media (max-width: 1024px) {
+  .hero {
+    font-size: 1.1rem;
+  }
+
+  .text-slideshow-container {
+    font-size: 24px;
+    height: 55px;
+  }
+}
+
+/* ✅ Tablet + Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  header h1 { font-size: 2.2rem; }
+  header p { font-size: 1rem; }
+
+  .hero {
+    font-size: 1rem;
+    padding: 30px 10px;
+  }
+
+  .text-slideshow-container {
+    font-size: 20px;
+    height: 45px;
+  }
+
+  .text-slide {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .gallery-section h2 { font-size: 1.6rem; }
+}
+
+/* ✅ Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  header h1 { font-size: 1.8rem; }
+  .hero { font-size: 0.95rem; padding: 20px 5px; }
+  .text-slideshow-container { font-size: 18px; height: 40px; }
+  .text-slide { font-size: 16px; padding: 0 5px; }
+  .gallery-section h2 { font-size: 1.3rem; }
 }
